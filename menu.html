@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>Our Menu | DiamondKitchen Restaurant</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="menu.css">
+</head>
+
+<body>
+
+
+  <!-- MENU SECTION -->
+  <main class="menu-section">
+
+    <h1>Our Seasonal Menu</h1>
+
+    <div class="menu-line"></div>
+
+    <p class="menu-subtitle">
+      Diamond cuisine celebrating
+      local and seasonal ingredients.
+    </p>
+
+
+    <!-- CATEGORY BUTTONS -->
+    <div class="category-buttons">
+
+      <button class="category-btn active"
+              data-category="starters">
+        Starters
+      </button>
+
+      <button class="category-btn"
+              data-category="mains">
+        Main Courses
+      </button>
+
+      <button class="category-btn"
+              data-category="desserts">
+        Desserts
+      </button>
+
+      <button class="category-btn"
+              data-category="wines">
+        Wines
+      </button>
+
+    </div>
+
+
+    <!-- FOOD FILTERS -->
+    <div class="filter-buttons">
+
+      <button class="filter-btn active"
+              data-filter="all">
+        All
+      </button>
+
+      <button class="filter-btn"
+              data-filter="vegetarian">
+        ♧ Vegetarian
+      </button>
+
+      <button class="filter-btn"
+              data-filter="gluten-free">
+        ◇ Gluten-Free
+      </button>
+
+    </div>
+
+
+    <!-- FOOD ITEMS -->
+    <div class="menu-grid" id="menuGrid">
+
+      <!-- FRESH NKWOBI -->
+      <div class="menu-card"
+           data-category="starters"
+           data-vegetarian="false"
+           data-gluten-free="true">
+
+        <div class="menu-card-top">
+          <h3>Fresh Nkwobi</h3>
+          <span>&#8358 7,000 </span>
+        </div>
+
+        <p>
+          Seasonal food and fresh native ingredients.
+        </p>
+
+        <div class="food-tags">
+          <span class="gluten">Gluten-Free</span>
+          <span class="allergen">nkwobi</span>
+        </div>
+      </div>
+
+
+      <!-- ABACHA -->
+      <div class="menu-card"
+           data-category="starters"
+           data-vegetarian="true"
+           data-gluten-free="true">
+
+        <div class="menu-card-top">
+          <h3>Abacha</h3>
+          <span>&#8358 9,000</span>
+        </div>
+
+        <p>
+          African Salad Filled With Native Ingredients.
+        </p>
+
+        <div class="food-tags">
+          <span class="vegetarian">Vegetarian</span>
+          <span class="gluten">Gluten-Free</span>
+          <span class="allergen">Dessert</span>
+        </div>
+      </div>
+
+
+      <!-- UKWA -->
+      <div class="menu-card"
+           data-category="starters"
+           data-vegetarian="false"
+           data-gluten-free="false">
+
+        <div class="menu-card-top">
+          <h3>Ukwa</h3>
+          <span>&#8358 8,000</span>
+        </div>
+
+        <p>
+          Nutrients packed bread fruit seed prepared with local ingredients.
+        </p>
+
+        <div class="food-tags">
+          <span class="allergen">Ukwa</span>
+        </div>
+      </div>
+      <!-- MELON SOUP -->
+      <div class="menu-card"
+           data-category="starters"
+           data-vegetarian="true"
+           data-gluten-free="true">
+
+        <div class="menu-card-top">
+          <h3>Melon Soup</h3>
+          <span>&#8358 5,000</span>
+        </div>
+
+        <p>
+          Melon Seed, Palm oil, Fresh local ingredients forperfect seasoning.
+        </p>
+
+        <div class="food-tags">
+          <span class="vegetarian">Vegetarian</span>
+          <span class="gluten">Gluten-Free</span>
+          <span class="allergen">Melon Seed</span>
+        </div>
+      </div>
+
+
+      <!-- SAMPLE MAIN COURSE -->
+      <div class="menu-card"
+           data-category="mains"
+           data-vegetarian="false"
+           data-gluten-free="true">
+
+        <div class="menu-card-top">
+          <h3>Roasted Beef with Vegetables</h3>
+          <span>&#8358 10,000</span>
+        </div>
+
+        <p>
+          Tender roasted beef with seasonal
+          vegetables and rich homemade sauce.
+        </p>
+
+        <div class="food-tags">
+          <span class="gluten">Gluten-Free</span>
+        </div>
+      </div>
+
+
+      <!-- SAMPLE DESSERT -->
+      <div class="menu-card"
+           data-category="desserts"
+           data-vegetarian="true"
+           data-gluten-free="false">
+
+        <div class="menu-card-top">
+          <h3>Homemade Ugba</h3>
+          <span>&#8358 6,000</span>
+        </div>
+
+        <p>
+          African(Igbo) Nutrients Packed Delicacy.
+        </p>
+
+        <div class="food-tags">
+          <span class="vegetarian">Vegetarian</span>
+          <span class="allergen">Cow Skin, Garden Egg Leaf</span>
+        </div>
+      </div>
+
+
+      <!-- SAMPLE WINE -->
+      <div class="menu-card"
+           data-category="wines"
+           data-vegetarian="false"
+           data-gluten-free="false">
+
+        <div class="menu-card-top">
+          <h3>House Red Wine</h3>
+          <span>&#8358 5,000</span>
+        </div>
+
+        <p>
+          A smooth and elegant red wine,
+          served by the glass.
+        </p>
+        <div class="menu-card-top">
+          <h3>Native Palm Wine</h3>
+          <span>&#8358 5,000</span>
+        </div>
+
+        <p>
+          A smooth and elegant white wine,
+          served by the calabash cup.
+        </p>
+      </div>
+
+    </div>
+
+
+    <!-- RESERVATION BUTTON -->
+    <div class="reserve-container">
+      <a href="reservation.html" class="reserve-button">
+        Book a Table
+      </a>
+    </div>
+
+  </main>
+  <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-box">
+                <div class="footer-logo">
+                    <h2>Diamond Kitchen</h2>
+                    <p>Your Home Of Good Food, Love And Comfort!</p>
+            </div>
+            <div class="footer-box">
+                <h3>Contact</h3>
+                <p>
+        <i class=img src="fas fa-map-maker-alt"></i>Plot 73 Prince Avenue<br>Trans-Ekulu Enugu</p>p
+        <p>
+            <i class="fas fa-phone"></i>08131598008</p>
+            <p>
+                <i class="fas fa-envelope"></i>Email:diamondkitchen8008@gmail.com</p>
+                </div>
+                <div class="footer-box">
+                    <h3>Opening Hours</h3>
+                    <p>
+                        <i class="far fa-clock"></i>
+                        <strong>Lunch</strong><br>Tuesday-Saturday<br>12:00pm - 2:30pm
+                    </p>
+                     <p>
+                        <i class="far fa-clock"></i>
+                        <strong>Dinner</strong><br>Tuesday-Saturday<br>7:00pm - 10:30pm
+                    </p>
+                    <p>Closed Sunday and Monday</p>
+                </div>
+                <div class="footer-box">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com" aria-label="Instagram"><i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com" aria-label="Facebook"><i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.linkedin.com" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+       <div class="footer-bottom">
+        <p>&copy; 2026 Diamond Kitchen. All Rights Reserved.</p>
+        <div class="footer-links">
+            <a href="#">Legal Notice</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Privacy policy</a>
+        </div>
+</div>
+</footer>
+ <script src="script.js"></script>
+  <script src="menu.js"></script>
+
+</body>
+</html>

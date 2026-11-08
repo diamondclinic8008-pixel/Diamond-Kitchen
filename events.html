@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Private Events at La Cour</title>
+  <link rel="stylesheet" href="events.css">
+  <script src="events.js" defer></script>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Book DiamondKitchen for a Private Event</h1>
+      <div class="gold-line"></div>
+      <p>A unique venue in the heart of Enugu for your professional events</p>
+    </div>
+  </section>
+
+  <main>
+    <section class="packages">
+      <h2>Our Packages</h2>
+      <div class="gold-line"></div>
+
+      <div class="package-grid">
+        <article class="package-card">
+          <div class="icon">♜</div>
+          <h3>Team Lunch</h3>
+          <p>A bistro-style lunch package for your team meetings.</p>
+          <ul>
+            <li>Native menu</li>
+            <li>Palm wine included</li>
+            <li>High-speed Wi-Fi</li>
+          </ul>
+        </article>
+
+        <article class="package-card">
+          <div class="icon">♧</div>
+          <h3>Partner Event</h3>
+          <p>A  local dish reception or seated dinner in our courtyard.</p>
+          <ul>
+            <li>Catering service</li>
+            <li>White Wine and bar</li>
+            <li>Music</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="feature">
+        <span class="feature-icon">♧</span>
+        <h3>Capacity</h3>
+        <p>Up to 50 guests</p>
+      </div>
+      <div class="feature">
+        <span class="feature-icon">♜</span>
+        <h3>Catering</h3>
+        <p>Custom menus</p>
+      </div>
+      <div class="feature">
+        <span class="feature-icon">▣</span>
+        <h3>Equipment</h3>
+        <p>Audiovisual equipment included</p>
+      </div>
+      <div class="feature">
+        <span class="feature-icon">♧</span>
+        <h3>Sustainability</h3>
+        <p>Environmentally responsible approach</p>
+      </div>
+    </section>
+
+    <section class="quote-section">
+      <h2>Request a Quote</h2>
+      <div class="gold-line"></div>
+
+      <form id="quote-form">
+        <div class="form-grid">
+          <label>
+            Full name *
+            <input type="text" name="name" placeholder="Jane Smith" required>
+          </label>
+
+          <label>
+            Company *
+            <input type="text" name="company" placeholder="Company name" required>
+          </label>
+
+          <label>
+            Email *
+            <input type="email" name="email" placeholder="jane@company.com" required>
+          </label>
+
+          <label>
+            Phone *
+            <input type="tel" name="phone" placeholder="08131598008" required>
+          </label>
+        </div>
+
+        <div class="form-grid three-columns">
+          <label>
+            Preferred date *
+            <input type="date" name="date" required>
+          </label>
+
+          <label>
+            Number of guests *
+            <input type="number" name="guests" min="1" placeholder="30" required>
+          </label>
+
+          <label>
+            Estimated budget
+            <select name="budget">
+              <option value="">Select</option>
+              <option>Under &#8358; 5,000</option>
+              <option>&#8358;1,000 &#8358;3,000</option>
+              <option>&#8358;3,000 &#8358;5,000</option>
+              <option>Over &#8358;5,000</option>
+            </select>
+          </label>
+        </div>
+
+        <label class="message-label">
+          Message / Event details
+          <textarea name="message" rows="5"
+            placeholder="Describe your event and any specific requirements..."></textarea>
+        </label>
+
+        <button type="submit">➤ &nbsp; Request a Quote</button>
+        <p class="response-note">
+          We usually respond within 48 hours —
+          <a href="mailto:contact@lacourparis.fr">contact@diamondclinic@gmail.com</a>
+        </p>
+
+        <p id="form-message" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+</body>
+</html>

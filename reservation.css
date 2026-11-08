@@ -1,0 +1,22 @@
+/* Reservation */
+.reservation form {
+  max-width: 550px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.reservation label {
+  font-weight: bold;
+  font-size: 14px;
+}
+.reservation input,
+.reservation select {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #ddd6cc;
+  border-radius: 5px;
+  background: white;
+  font: inherit;
+  margin-bottom: 10px;
+}
