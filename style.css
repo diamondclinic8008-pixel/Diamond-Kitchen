@@ -75,27 +75,29 @@ img {
     gap: 8px;
     list-style: none;
 }
-.nav-links a {
+.navLinks.show {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.navLinks a {
+  display: block; 
     text-decoration: none;
     color: #fff;
     padding: 5px 10px;
     transition: background-color 0.3s ease;
 }
-.nav-links a:hover {
+.navLinks a:hover {
     background-color: rgb(80, 128, 233);
     border-radius: 4px;
 }
-.nav-links .nav-button {
+.navLinks .nav-button {
   background: #5f0633e1;
   color: white;
   padding: 10px 17px;
   border-radius: 5px;
 }
-menu-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
+
 .logo {
   font-family: Georgia, serif;
   font-size: 23px;
@@ -110,6 +112,7 @@ menu-toggle {
   background: none;
   border: none;
   font-size: 28px;
+  color: white;
   cursor: pointer;
 }
 /* Hero */
@@ -442,9 +445,21 @@ view-menu {
     .navLinks {
       display: none;
     }
+    .logo {
+      font-size: 16px;
+    }
     .fa-solid {
       display: block !important;
+      font-size: 28px;
+      cursor: pointer;
     }
-}
+    /* .navLinks.show {
+        display: flex;
+        flex-direction: column;
+    } */
+     
+    }
+   
+  
 
 
